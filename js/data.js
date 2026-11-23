@@ -34,7 +34,7 @@ const personalInfo = {
     "Motion graphics",
     "VFX Editing",
     "UI/UX Design Systems",
-    "API Engineering",
+    "Colour Grading",
     "Creator"
   ]
 };
