@@ -53,33 +53,33 @@ const heroExhibits = {
   },
   bottomLeft: {
     id: "hero-2",
-    title: "Portrait de Jean Daurelle, en pied",
-    subtitle: "1887 Gustave Caillebotte",
-    category: "Identity & Interface",
-    tag: "Design System",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gustave_Caillebotte_-_Portrait_de_Jean_Daurelle_en_pied_-_Mus%C3%A9e_d%27Orsay.jpg/800px-Gustave_Caillebotte_-_Portrait_de_Jean_Daurelle_en_pied_-_Mus%C3%A9e_d%27Orsay.jpg",
-    details: "A comprehensive WCAG AAA accessible design token system crafted for high-contrast, typographic-first applications.",
-    link: "https://behance.net"
+    title: "Munnar And Ramakkalmedu",
+    subtitle: "colloge iv",
+    category: "Travelling",
+    tag: "KeralaTourism",
+    image: "https://share.google/iu5TavT1TyPjRdLg4",
+    details: "Munnar’s misty tea plantations and rolling hills offer a serene escape into Kerala’s highlands. Ramakkalmedu’s open ridges and sweeping views create a striking landscape shaped by wind, sky, and mountain air.",
+    link: "https://www.instagram.com/reel/DYhej9_Iwb_/?utm_source=ig_web_copy_link&gwpx=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA=="
   },
   topRight: {
     id: "hero-3",
-    title: "Portrait de Richard Gallo",
-    subtitle: "1884 Gustave Caillebotte",
-    category: "Open Source Engineering",
-    tag: "Developer Tool",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Gustave_Caillebotte_-_Portrait_de_Richard_Gallo_-_Mus%C3%A9e_des_Beaux-Arts_de_Rennes.jpg/800px-Gustave_Caillebotte_-_Portrait_de_Richard_Gallo_-_Mus%C3%A9e_des_Beaux-Arts_de_Rennes.jpg",
-    details: "OmniDash: An open-source interactive telemetry dashboard aggregating real-time server metrics into a clean glassmorphic view.",
-    link: "https://github.com"
+    title: "Hampi",
+    subtitle: "2027 prethyasha",
+    category: "Travelling",
+    tag: "architecture",
+    image: "https://share.google/4s5lKFtgvmxKlOuQl",
+    details: "Hampe, also known as Vijayanagara, is a city in the Vijayanagara district in the Indian state of Karnataka. Located along the Tungabhadra River in the eastern and central parts of the state, Hampi is near the city of Hospet",
+    link: "https://www.instagram.com/prethyashaa/?utm_source=ig_web_button_share_sheet"
   },
   bottomRight: {
     id: "hero-4",
-    title: "Rue de Paris, temps de pluie",
-    subtitle: "1877 Gustave Caillebotte",
-    category: "Critical Essays",
-    tag: "Editorial Essay",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gustave_Caillebotte_-_Paris_Street%3B_Rainy_Day_-_Google_Art_Project.jpg/800px-Gustave_Caillebotte_-_Paris_Street%3B_Rainy_Day_-_Google_Art_Project.jpg",
-    details: "A cautionary critique of excessive micro-frontend adoption and practical guidelines on preserving the modular monolith.",
-    link: "https://dev.to"
+    title: "Animation in Blender",
+    subtitle: "My Work",
+    category: "VFX",
+    tag: "blender",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-IKMKSEMvCyQQsArkfPR5q7guiBfBLSSVAohkllEC8Mz-C1e7g2ncTpJ&s=10",
+    details: "learning vfx in blender",
+    link: "https://www.instagram.com/prethyashaa/?utm_source=ig_web_button_share_sheet"
   }
 };
 
