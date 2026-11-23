@@ -19,8 +19,8 @@ const personalInfo = {
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com"
   },
-  biographyParagraph1: "A multidisciplinary software engineer and technical essayist operating at the intersection of performant software architecture, thoughtful typography, and digital culture. Much like the 19th-century realists who documented urban transformation with precision and light, modern software demands both structural rigor and human-centered storytelling.",
-  biographyParagraph2: "My work spans high-throughput distributed systems, modular developer tooling, and critical essays exploring the socio-technical patterns of modern computing. Each piece in this collection represents a published clipping, production release, or research inquiry.",
+  biographyParagraph1: "As a computer science engineering student and digital content creator, I combine technical expertise with a refined approach to visual storytelling. Proficient in DaVinci Resolve, CapCut, and Adobe After Effects, I create polished video content with a focus on precise editing, compelling motion graphics, and meticulous attention to detail.",
+  biographyParagraph2: "My work also includes 3D design and visual development using Blender. With a strong problem-solving mindset and a commitment to quality, I bring creative concepts to life through professional, engaging, and visually cohesive content..",
   statementQuote: "Software is not merely functional infrastructure — it is an editorial craft of clarity, intentionality, and enduring form.",
   statementAuthor: "Aadith Krishna, Notes on Digital Craftsmanship",
   stats: [
