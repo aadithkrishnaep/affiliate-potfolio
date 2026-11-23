@@ -57,7 +57,7 @@ const heroExhibits = {
     subtitle: "colloge iv",
     category: "Travelling",
     tag: "KeralaTourism",
-    image: "https://share.google/iu5TavT1TyPjRdLg4",
+    image: "https://media1.thrillophilia.com/filestore/oc95fn4il5gvcvyxvt1digt9bqol_munnar-tour-packages.webp?w=1536&q=65&format=auto",
     details: "Munnar’s misty tea plantations and rolling hills offer a serene escape into Kerala’s highlands. Ramakkalmedu’s open ridges and sweeping views create a striking landscape shaped by wind, sky, and mountain air.",
     link: "https://www.instagram.com/reel/DYhej9_Iwb_/?utm_source=ig_web_copy_link&gwpx=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA=="
   },
@@ -67,7 +67,7 @@ const heroExhibits = {
     subtitle: "2027 prethyasha",
     category: "Travelling",
     tag: "architecture",
-    image: "https://share.google/4s5lKFtgvmxKlOuQl",
+    image: "https://s7ap1.scene7.com/is/image/incredibleindia/virupaksha-temple-hampi-karnataka-1-attr-nearby?qlt=82&ts=1742170327508",
     details: "Hampe, also known as Vijayanagara, is a city in the Vijayanagara district in the Indian state of Karnataka. Located along the Tungabhadra River in the eastern and central parts of the state, Hampi is near the city of Hospet",
     link: "https://www.instagram.com/prethyashaa/?utm_source=ig_web_button_share_sheet"
   },
@@ -77,7 +77,7 @@ const heroExhibits = {
     subtitle: "My Work",
     category: "VFX",
     tag: "blender",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-IKMKSEMvCyQQsArkfPR5q7guiBfBLSSVAohkllEC8Mz-C1e7g2ncTpJ&s=10",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZxstaH9KkAM_zFaLKawtWuuhlp7WHHg3v0w3kH74xw&s",
     details: "learning vfx in blender",
     link: "https://www.instagram.com/prethyashaa/?utm_source=ig_web_button_share_sheet"
   }
