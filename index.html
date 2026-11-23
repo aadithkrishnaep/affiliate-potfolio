@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caillebotte / Painting Men — Musée d'Orsay & Personal Works</title>
+  <meta name="description" content="Editorial introduction and curated clippings of works styled in the Musée d'Orsay Caillebotte exhibition aesthetic.">
+
+  <!-- Typography: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: '#f2efef',
+            ink: '#000000',
+            rust: '#9e4531',
+            surround: '#9e8b88',
+            gridline: '#ded8d5'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS for Editorial Perfection -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#9e8b88] min-h-screen text-black select-none">
+
+  <!-- Presentation Frame / Viewport -->
+  <div class="gallery-viewport-frame">
+
+    <!-- ================= FIXED LEFT VERTICAL RAIL ================= -->
+    <aside class="left-nav-rail">
+      <!-- Top: Solid Black Square Menu Button (≡) -->
+      <button 
+        id="menu-trigger-btn" 
+        class="menu-trigger-sq" 
+        aria-label="Open Directory Menu"
+        title="Index & Navigation"
+      >
+        <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="7" x2="21" y2="7"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="17" x2="21" y2="17"></line>
+        </svg>
+      </button>
+
+      <!-- Center: Editorial Stacked Monogram (M / O or A / K) -->
+      <div 
+        class="rail-monogram group" 
+        onclick="scrollToSlide('slide-hero')" 
+        title="Aadith Krishna / Musée d'Orsay"
+      >
+        <span class="mono-letter group-hover:text-[#9e4531] transition-colors">M</span>
+        <span class="mono-bar"></span>
+        <span class="mono-letter group-hover:text-[#9e4531] transition-colors">O</span>
+      </div>
+
+      <!-- Bottom: Rectangular Layout / Spec Icon -->
+      <button 
+        class="rail-icon-bottom" 
+        onclick="scrollToSlide('slide-about')" 
+        aria-label="About the Artist" 
+        title="Exhibition Details"
+      >
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="4" y="5" width="16" height="14" rx="2"></rect>
+          <line x1="9" y1="9" x2="9" y2="15"></line>
+        </svg>
+      </button>
+    </aside>
+
+    <!-- ================= FIXED CORNER CONTROLS ================= -->
+    <!-- Top-Right Search Button (🔍) in Hairline Cell -->
+    <button 
+      id="search-trigger-btn" 
+      class="top-search-btn" 
+      aria-label="Search Catalog"
+      title="Search Clippings & Works"
+    >
+      <i data-lucide="search" class="w-4 h-4"></i>
+    </button>
+
+    <!-- Bottom-Right Black Square Down Button (↓) -->
+    <button 
+      id="scroll-next-btn" 
+      class="bottom-scroll-btn" 
+      aria-label="Scroll to Next Slide"
+      title="Advance to next slide"
+    >
+      <i data-lucide="arrow-down" class="w-4 h-4 text-white"></i>
+    </button>
+
+    <!-- ================= MAIN SLIDES DECK (SCROLL-SNAP CONTAINER) ================= -->
+    <main id="slides-deck" class="slides-deck">
+
+      <!-- ========================================================= -->
+      <!-- SLIDE 1: HERO EXHIBITION / INTRODUCTION (Images 1 & 2)     -->
+      <!-- ========================================================= -->
+      <section id="slide-hero" class="gallery-slide p-6 md:p-12 relative flex flex-col justify-between">
+        <!-- 4-Column Hairline Grid Overlay -->
+        <div class="hairline-grid-overlay">
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+        </div>
+
+        <!-- Upper Row: Staggered Artwork Slots -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+          <!-- Top-Left Artwork: Le pont de l'Europe -->
+          <div class="md:col-span-5 md:pl-8 pt-2">
+            <div id="hero-exhibit-tl"></div>
+          </div>
+
+          <!-- Empty Spacing in Grid for Balance -->
+          <div class="hidden md:block md:col-span-3"></div>
+
+          <!-- Top-Right Artwork: Tall Portrait (Portrait de Richard Gallo / Jean Daurelle) -->
+          <div class="md:col-span-4 flex justify-end pr-14 pt-2">
+            <div id="hero-exhibit-tr"></div>
+          </div>
+        </div>
+
+        <!-- Center Stage: Massive Playfair Display Title -->
+        <div class="relative z-10 text-center my-auto py-8">
+          <h1 
+            id="hero-main-title" 
+            class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight leading-[1.02] text-black font-normal"
+          >
+            Caillebotte<br>
+            Painting men
+          </h1>
+
+          <p 
+            id="hero-date-range" 
+            class="font-sans text-xs uppercase tracking-widest text-black/60 text-center mt-6 leading-relaxed"
+          >
+            From October 08th, 2024<br>
+            to January 19th, 2025
+          </p>
+
+          <!-- Subtle switcher pill to personalize or view creator intro -->
+          <div class="mt-4 flex items-center justify-center gap-3">
+            <button 
+              onclick="scrollToSlide('slide-about')" 
+              class="text-[11px] uppercase tracking-wider font-semibold text-[#9e4531] hover:underline"
+            >
+              Explore Introduction & Works →
+            </button>
+          </div>
+        </div>
+
+        <!-- Lower Row: Staggered Artwork Slots -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-end pb-4">
+          <!-- Bottom-Left Artwork: Tall Portrait (Portrait de Jean Daurelle, en pied) -->
+          <div class="md:col-span-4 md:pl-8">
+            <div id="hero-exhibit-bl"></div>
+          </div>
+
+          <!-- Empty Column Spacing -->
+          <div class="hidden md:block md:col-span-3"></div>
+
+          <!-- Bottom-Right Artwork: Cityscape (Rue de Paris, temps de pluie) -->
+          <div class="md:col-span-5 flex justify-end pr-14">
+            <div id="hero-exhibit-br"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========================================================= -->
+      <!-- SLIDE 2: ABOUT THE ARTIST / CREATOR (Image 3)              -->
+      <!-- ========================================================= -->
+      <section id="slide-about" class="gallery-slide p-6 md:p-14 relative flex flex-col justify-between">
+        <!-- 4-Column Hairline Grid Overlay -->
+        <div class="hairline-grid-overlay">
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 h-full">
+
+          <!-- Left Column (Cols 1-7): Heading, 2-Column Editorial Biography, Featured Artwork -->
+          <div class="lg:col-span-7 flex flex-col justify-between space-y-8 pr-4">
+            <div>
+              <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl text-black font-normal tracking-tight mb-8">
+                About the artist
+              </h2>
+
+              <!-- Two-column editorial prose -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs md:text-[13px] leading-relaxed text-black/80 font-sans">
+                <p id="about-p1">
+                  Gustave Caillebotte was a French painter who was a member and patron of the Impressionists, although he painted in a more realistic manner than many others in the group. Caillebotte was known for his early interest in photography as an art form.
+                </p>
+                <p id="about-p2">
+                  Gustave Caillebotte, an influential figure in 19th-century French art, shared a common goal with artists like Jean-François Millet, Gustave Courbet, and his contemporary Edgar Degas: the depiction of reality as it truly existed. He sought to minimize the inherent theatrical elements traditionally associated with painting, striving for authenticity and realism.
+                </p>
+              </div>
+            </div>
+
+            <!-- Lower featured painting: Partie de bateau, Gustave Caillebotte -->
+            <div class="pt-4 border-t border-black/10">
+              <div id="about-featured-artwork"></div>
+            </div>
+          </div>
+
+          <!-- Right Column (Cols 8-12): Tall Artwork Portrait & Contemporary Discipline Spec -->
+          <div class="lg:col-span-5 flex flex-col justify-between lg:border-l lg:border-black/10 lg:pl-10">
+            <div class="artwork-container group mb-6">
+              <div class="overflow-hidden bg-[#e2dedb] shadow-sm max-w-[340px] ml-auto">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gustave_Caillebotte_-_Portrait_de_Jean_Daurelle_en_pied_-_Mus%C3%A9e_d%27Orsay.jpg/800px-Gustave_Caillebotte_-_Portrait_de_Jean_Daurelle_en_pied_-_Mus%C3%A9e_d%27Orsay.jpg" 
+                  alt="Portrait de Jean Daurelle" 
+                  class="w-full aspect-[2/3] object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="artwork-caption text-right max-w-[340px] ml-auto mt-2">
+                <div class="caption-title">Portrait de Jean Daurelle, en pied</div>
+                <div class="caption-meta">1887 Gustave Caillebotte • Musée d'Orsay</div>
+              </div>
+            </div>
+
+            <!-- Personal Profile Disciplines / Curatorial Stack -->
+            <div class="bg-white/50 border border-black/10 p-5 max-w-[340px] ml-auto">
+              <h4 class="text-xs uppercase font-bold tracking-wider text-[#9e4531] mb-2">Contemporary Practice & Stack</h4>
+              <p class="text-xs text-black/70 mb-3">Aadith Krishna's technical disciplines across architecture and essay writing:</p>
+              <div id="about-disciplines" class="flex flex-wrap gap-1.5">
+                <!-- Injected via main.js -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ========================================================= -->
+      <!-- SLIDE 3: CURRENT EXHIBITIONS / CLIPPINGS (Images 3 & 4)    -->
+      <!-- ========================================================= -->
+      <section id="slide-clippings" class="gallery-slide p-6 md:p-14 relative flex flex-col justify-between">
+        <!-- 4-Column Hairline Grid Overlay -->
+        <div class="hairline-grid-overlay">
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+        </div>
+
+        <div class="relative z-10 w-full space-y-6">
+
+          <!-- Section Header and Filter Bar -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-4 border-b border-black/10">
+            <div>
+              <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl text-black font-normal tracking-tight">
+                Current exhibitions
+              </h2>
+              <p class="text-xs uppercase tracking-widest text-black/60 font-sans mt-2">
+                Curated clippings of technical articles, architectural systems & case studies
+              </p>
+            </div>
+
+            <!-- Editorial Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2">
+              <button class="editorial-tab active" data-category="all">All Works</button>
+              <button class="editorial-tab" data-category="writing">Articles & Essays</button>
+              <button class="editorial-tab" data-category="projects">Code & Tools</button>
+              <button class="editorial-tab" data-category="design">Design & Visuals</button>
+            </div>
+          </div>
+
+          <!-- Staggered Clippings Grid -->
+          <div id="clippings-catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
+            <!-- Injected by js/main.js -->
+          </div>
+
+        </div>
+
+        <!-- Section Footer Subtitle -->
+        <div class="relative z-10 text-xs text-black/50 pt-4 flex items-center justify-between">
+          <span>Cataloged for public review • 2024—2026</span>
+          <span class="text-[#9e4531] font-semibold cursor-pointer hover:underline" onclick="scrollToSlide('slide-statement')">
+            Institutional Tour & Inquiries ↓
+          </span>
+        </div>
+      </section>
+
+
+      <!-- ========================================================= -->
+      <!-- SLIDE 4: EXHIBITION STATEMENT & CONTACT (Image 4)          -->
+      <!-- ========================================================= -->
+      <section id="slide-statement" class="gallery-slide p-6 md:p-14 relative flex flex-col justify-between">
+        <!-- 4-Column Hairline Grid Overlay -->
+        <div class="hairline-grid-overlay">
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+          <div class="hairline-col"></div>
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 my-auto">
+
+          <!-- Left Column (Cols 1-7): Large Statement Quote -->
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#9e4531]">Exhibition Statement & Vision</span>
+
+            <blockquote class="font-serif text-2xl sm:text-3xl md:text-4xl text-black font-normal leading-tight">
+              "The exhibition highlights Gustave Caillebotte's focus on masculine forms and portraits of men. It explores his radical modernity and the evolving art historical perspectives on 19th-century masculinity."
+            </blockquote>
+
+            <p class="text-xs md:text-sm text-black/75 font-sans leading-relaxed pt-2">
+              The exhibition will be on display at the <span class="font-semibold text-black">J. Paul Getty Museum</span>, Los Angeles, from 25 February to 25 May 2025, and at the <span class="font-semibold text-black">Art Institute of Chicago</span> from 29 June to 5 October 2025.
+            </p>
+
+            <!-- Personal Statement -->
+            <div class="pt-4 border-t border-black/10">
+              <h4 class="text-xs uppercase font-bold tracking-wider text-black mb-2">Aadith Krishna — Selected Practice</h4>
+              <p id="statement-quote" class="text-xs text-black/70 italic font-serif leading-relaxed">
+                "Software is not merely functional infrastructure — it is an editorial craft of clarity, intentionality, and enduring form."
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column (Cols 8-12): Institutional Inquiries & Contact Form -->
+          <div class="lg:col-span-5 bg-white/60 border border-black/10 p-6 md:p-8 space-y-6">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-black mb-1">Inquiries & Commissioning</h3>
+              <p class="text-xs text-black/70">Connect with Aadith Krishna for technical writing, advisory, or software architecture.</p>
+            </div>
+
+            <!-- Direct Email Block -->
+            <div class="p-3 border border-black/10 bg-[#f2efef] flex items-center justify-between text-xs">
+              <div>
+                <span class="text-[10px] uppercase font-bold text-black/50 block">Direct Channel</span>
+                <span class="font-mono font-semibold text-black">aadith@example.com</span>
+              </div>
+              <button 
+                onclick="copyEmailToClipboard()" 
+                class="px-2.5 py-1 bg-black text-white hover:bg-[#9e4531] transition-colors text-[11px] font-semibold uppercase tracking-wider"
+              >
+                Copy
+              </button>
+            </div>
+
+            <!-- Inquiry Form -->
+            <form id="inquiry-form" class="space-y-3">
+              <div>
+                <label class="block text-[10px] uppercase font-bold tracking-wider text-black/70 mb-1">Your Name / Organization</label>
+                <input 
+                  type="text" 
+                  required 
+                  placeholder="e.g. Art Institute of Chicago / Jane Doe" 
+                  class="w-full px-3 py-2 text-xs bg-white border border-black/15 focus:outline-none focus:border-black font-sans"
+                >
+              </div>
+
+              <div>
+                <label class="block text-[10px] uppercase font-bold tracking-wider text-black/70 mb-1">Email Address</label>
+                <input 
+                  type="email" 
+                  required 
+                  placeholder="jane@museum.org" 
+                  class="w-full px-3 py-2 text-xs bg-white border border-black/15 focus:outline-none focus:border-black font-sans"
+                >
+              </div>
+
+              <div>
+                <label class="block text-[10px] uppercase font-bold tracking-wider text-black/70 mb-1">Nature of Inquiry</label>
+                <textarea 
+                  rows="3" 
+                  required 
+                  placeholder="Specify proposal, writing assignment, or technical scope..." 
+                  class="w-full px-3 py-2 text-xs bg-white border border-black/15 focus:outline-none focus:border-black resize-none font-sans"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit" 
+                class="w-full py-2.5 bg-black hover:bg-[#9e4531] text-white text-xs uppercase tracking-widest font-semibold transition-colors flex items-center justify-center gap-2"
+              >
+                <span>Dispatch Inquiry</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Footer Colophon -->
+        <div class="relative z-10 text-[11px] text-black/50 pt-4 flex flex-col sm:flex-row items-center justify-between border-t border-black/10 gap-2">
+          <div>
+            © 2026 Aadith Krishna • Musée d'Orsay Editorial Theme
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="https://github.com" target="_blank" class="hover:text-black">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" class="hover:text-black">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" class="hover:text-black">Twitter</a>
+            <button onclick="scrollToSlide('slide-hero')" class="hover:underline font-semibold text-black">Top ↑</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ================= EDITORIAL DIRECTORY DRAWER (≡) ================= -->
+  <div id="menu-drawer" class="editorial-drawer">
+    <div class="max-w-4xl w-full mx-auto my-auto p-8 md:p-14 relative flex flex-col justify-between">
+      <!-- Close Button -->
+      <button 
+        id="menu-close-btn" 
+        class="absolute top-8 right-8 text-black hover:text-[#9e4531] text-2xl font-bold"
+        aria-label="Close Menu"
+      >
+        ✕
+      </button>
+
+      <div>
+        <span class="text-xs uppercase tracking-widest text-[#9e4531] font-bold">Catalogue Index & Navigation</span>
+        <h2 class="font-serif text-3xl md:text-5xl font-bold mt-2 mb-8">Exhibition Directory</h2>
+
+        <nav class="space-y-4 font-serif text-2xl md:text-3xl">
+          <div>
+            <a href="#slide-hero" onclick="scrollToSlide('slide-hero')" class="hover:text-[#9e4531] transition-colors flex items-center gap-4">
+              <span class="text-xs font-mono text-black/40">01</span>
+              <span>Caillebotte / Painting men (Hero)</span>
+            </a>
+          </div>
+          <div>
+            <a href="#slide-about" onclick="scrollToSlide('slide-about')" class="hover:text-[#9e4531] transition-colors flex items-center gap-4">
+              <span class="text-xs font-mono text-black/40">02</span>
+              <span>About the Artist & Author</span>
+            </a>
+          </div>
+          <div>
+            <a href="#slide-clippings" onclick="scrollToSlide('slide-clippings')" class="hover:text-[#9e4531] transition-colors flex items-center gap-4">
+              <span class="text-xs font-mono text-black/40">03</span>
+              <span>Current Exhibitions & Work Clippings</span>
+            </a>
+          </div>
+          <div>
+            <a href="#slide-statement" onclick="scrollToSlide('slide-statement')" class="hover:text-[#9e4531] transition-colors flex items-center gap-4">
+              <span class="text-xs font-mono text-black/40">04</span>
+              <span>Statement & Inquiries</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Spec & Color Palette Info Card (Image 2 representation) -->
+      <div class="mt-12 pt-8 border-t border-black/15 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-black/50 block mb-1">Display Typography</span>
+          <div class="font-serif text-2xl font-bold text-black">Playfair Display</div>
+          <p class="text-xs text-black/60 font-mono mt-1">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn</p>
+        </div>
+
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-black/50 block mb-2">Exhibition Colors</span>
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1.5">
+              <div class="w-7 h-7 rounded-md bg-[#000000] border border-black/20 shadow-sm"></div>
+              <span class="text-[10px] font-mono">#000000</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <div class="w-7 h-7 rounded-md bg-[#9e4531] border border-black/20 shadow-sm"></div>
+              <span class="text-[10px] font-mono">#9e4531</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <div class="w-7 h-7 rounded-md bg-[#f2efef] border border-black/20 shadow-sm"></div>
+              <span class="text-[10px] font-mono">#f2efef</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= EDITORIAL SEARCH OVERLAY (🔍) ================= -->
+  <div id="search-drawer" class="editorial-drawer">
+    <div class="max-w-3xl w-full mx-auto my-auto p-8 relative flex flex-col justify-between">
+      <!-- Close Button -->
+      <button 
+        id="search-close-btn" 
+        class="absolute top-8 right-8 text-black hover:text-[#9e4531] text-2xl font-bold"
+        aria-label="Close Search"
+      >
+        ✕
+      </button>
+
+      <div>
+        <span class="text-xs uppercase tracking-widest text-[#9e4531] font-bold">Search Curated Archive</span>
+        <div class="mt-4 mb-6">
+          <input 
+            id="search-input-field" 
+            type="text" 
+            placeholder="Type to search titles, publications, or topics..." 
+            class="w-full bg-transparent border-b-2 border-black pb-3 text-2xl md:text-3xl font-serif text-black placeholder-black/30 focus:outline-none"
+          >
+        </div>
+
+        <!-- Live search results list -->
+        <div id="search-results-list" class="space-y-2 max-h-[50vh] overflow-y-auto pr-2">
+          <p class="text-xs uppercase tracking-widest text-black/40">Start typing to search titles, publications, or topics...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= EDITORIAL CLIPPING INSPECTION MODAL ================= -->
+  <div id="editorial-modal" class="editorial-modal-backdrop">
+    <div class="editorial-modal-card">
+      <button 
+        onclick="closeEditorialModal()" 
+        class="absolute top-4 right-4 z-30 w-8 h-8 bg-black/60 text-white hover:bg-black flex items-center justify-center transition-colors"
+        aria-label="Close Dialog"
+      >
+        ✕
+      </button>
+
+      <div id="modal-body-content">
+        <!-- Injected dynamically via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
