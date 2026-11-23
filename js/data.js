@@ -43,10 +43,10 @@ const personalInfo = {
 const heroExhibits = {
   topLeft: {
     id: "hero-1",
-    title: "Le pont de l'Europe",
-    subtitle: "1876-1877 Gustave Caillebotte",
-    category: "Architecture & Systems",
-    tag: "Distributed Systems",
+    title: "Varkala",
+    subtitle: "2026 Prethyasha",
+    category: "Travelling",
+    tag: "beach",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gustave_Caillebotte_-_Le_Pont_de_l%27Europe_-_Google_Art_Project.jpg/800px-Gustave_Caillebotte_-_Le_Pont_de_l%27Europe_-_Google_Art_Project.jpg",
     details: "Exploring scalable event stream architectures with sub-millisecond latencies and resilient message broker backpressure patterns.",
     link: "https://medium.com"
