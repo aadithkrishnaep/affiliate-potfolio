@@ -10,7 +10,7 @@ const personalInfo = {
   monogram: { top: "A", bottom: "K" },
   exhibitionTitle: "Aadith's",
   exhibitionSubtitle: "Works & Clippings",
-  dateRange: "From November 20 to Present",
+  dateRange: "From November 2026 to Present",
   role: "Software Developer & Digital Essayist",
   location: "kerela, India — Available Globally",
   email: "aadithaffiliate@gmail.com",
