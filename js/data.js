@@ -6,14 +6,14 @@
  */
 
 const personalInfo = {
-  name: "Aadith Krishna",
+  name: "Aadith Krishna E P",
   monogram: { top: "A", bottom: "K" },
-  exhibitionTitle: "Aadith Krishna",
+  exhibitionTitle: "Aadith's",
   exhibitionSubtitle: "Works & Clippings",
-  dateRange: "From October 2023 to Present",
+  dateRange: "From November 20 to Present",
   role: "Software Developer & Digital Essayist",
-  location: "Bangalore, India — Available Globally",
-  email: "aadith@example.com",
+  location: "kerela, India — Available Globally",
+  email: "aadithaffiliate@gmail.com",
   socials: {
     github: "https://github.com",
     linkedin: "https://linkedin.com",
@@ -21,8 +21,8 @@ const personalInfo = {
   },
   biographyParagraph1: "As a computer science engineering student and digital content creator, I combine technical expertise with a refined approach to visual storytelling. Proficient in DaVinci Resolve, CapCut, and Adobe After Effects, I create polished video content with a focus on precise editing, compelling motion graphics, and meticulous attention to detail.",
   biographyParagraph2: "My work also includes 3D design and visual development using Blender. With a strong problem-solving mindset and a commitment to quality, I bring creative concepts to life through professional, engaging, and visually cohesive content..",
-  statementQuote: "Software is not merely functional infrastructure — it is an editorial craft of clarity, intentionality, and enduring form.",
-  statementAuthor: "Aadith Krishna, Notes on Digital Craftsmanship",
+  statementQuote: "Beyond the frame, beyond the ordinary—every cut carries a presence of its own.",
+  statementAuthor: "Aadith Krishna, Notes on Craftsmanship",
   stats: [
     { label: "Active Years", value: "03+" },
     { label: "Published Works", value: "24+" },
@@ -30,12 +30,12 @@ const personalInfo = {
     { label: "Open Source Stars", value: "2.1K" }
   ],
   disciplines: [
-    "Distributed Systems",
-    "Frontend Architecture",
-    "Technical Writing",
+    "Video Editing",
+    "Motion graphics",
+    "VFX Editing",
     "UI/UX Design Systems",
     "API Engineering",
-    "Developer Tooling"
+    "Creator"
   ]
 };
 
