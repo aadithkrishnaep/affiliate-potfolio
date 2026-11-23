@@ -48,8 +48,8 @@ const heroExhibits = {
     category: "Travelling",
     tag: "beach",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMndWwf294OS9YTl7oeoCx4ep6pVl1yNRj69ERamHPg&s=10",
-    details: "Exploring scalable event stream architectures with sub-millisecond latencies and resilient message broker backpressure patterns.",
-    link: "https://medium.com"
+    details: "Varkala is a coastal retreat where dramatic cliffs, serene beaches, and sweeping ocean views create a distinctive sense of calm.",
+    link: "https://www.instagram.com/reel/DTIbT9SCFfP/?utm_source=ig_web_copy_link&jplx=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA=="
   },
   bottomLeft: {
     id: "hero-2",
