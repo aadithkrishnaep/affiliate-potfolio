@@ -47,7 +47,7 @@ const heroExhibits = {
     subtitle: "2026 Prethyasha",
     category: "Travelling",
     tag: "beach",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gustave_Caillebotte_-_Le_Pont_de_l%27Europe_-_Google_Art_Project.jpg/800px-Gustave_Caillebotte_-_Le_Pont_de_l%27Europe_-_Google_Art_Project.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMndWwf294OS9YTl7oeoCx4ep6pVl1yNRj69ERamHPg&s=10",
     details: "Exploring scalable event stream architectures with sub-millisecond latencies and resilient message broker backpressure patterns.",
     link: "https://medium.com"
   },
