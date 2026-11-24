@@ -40,48 +40,6 @@ const personalInfo = {
 };
 
 // Hero staggered artwork & clippings (matches Image 1 & 2 layout)
-const heroExhibits = {
-  topLeft: {
-    id: "hero-1",
-    title: "Varkala",
-    subtitle: "2026 Prethyasha",
-    category: "Travelling",
-    tag: "beach",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMndWwf294OS9YTl7oeoCx4ep6pVl1yNRj69ERamHPg&s=10",
-    details: "Varkala is a coastal retreat where dramatic cliffs, serene beaches, and sweeping ocean views create a distinctive sense of calm.",
-    link: "https://www.instagram.com/reel/DTIbT9SCFfP/?utm_source=ig_web_copy_link&jplx=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA=="
-  },
-  bottomLeft: {
-    id: "hero-2",
-    title: "Munnar And Ramakkalmedu",
-    subtitle: "colloge iv",
-    category: "Travelling",
-    tag: "KeralaTourism",
-    image: "https://media1.thrillophilia.com/filestore/oc95fn4il5gvcvyxvt1digt9bqol_munnar-tour-packages.webp?w=1536&q=65&format=auto",
-    details: "Munnar’s misty tea plantations and rolling hills offer a serene escape into Kerala’s highlands. Ramakkalmedu’s open ridges and sweeping views create a striking landscape shaped by wind, sky, and mountain air.",
-    link: "https://www.instagram.com/reel/DYhej9_Iwb_/?utm_source=ig_web_copy_link&gwpx=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA=="
-  },
-  topRight: {
-    id: "hero-3",
-    title: "Hampi",
-    subtitle: "2027 prethyasha",
-    category: "Travelling",
-    tag: "architecture",
-    image: "https://s7ap1.scene7.com/is/image/incredibleindia/virupaksha-temple-hampi-karnataka-1-attr-nearby?qlt=82&ts=1742170327508",
-    details: "Hampe, also known as Vijayanagara, is a city in the Vijayanagara district in the Indian state of Karnataka. Located along the Tungabhadra River in the eastern and central parts of the state, Hampi is near the city of Hospet",
-    link: "https://www.instagram.com/prethyashaa/?utm_source=ig_web_button_share_sheet"
-  },
-  bottomRight: {
-    id: "hero-4",
-    title: "Animation in Blender",
-    subtitle: "My Work",
-    category: "VFX",
-    tag: "blender",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZxstaH9KkAM_zFaLKawtWuuhlp7WHHg3v0w3kH74xw&s",
-    details: "learning vfx in blender",
-    link: "https://www.instagram.com/prethyashaa/?utm_source=ig_web_button_share_sheet"
-  }
-};
 
 // Full catalogue of curated work clippings (matches Image 3 & 4 layout)
 const workClippings = [
